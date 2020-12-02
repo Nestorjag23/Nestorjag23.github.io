@@ -1,3 +1,7 @@
+$(document).ready()
+
+
+
 var divNoches=document.getElementById("noches");
 divNoches.addEventListener("click",mostrarNoches,false);
 function mostrarNoches()
