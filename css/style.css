@@ -4,3 +4,9 @@ form
     flex-direction: row;
     justify-content: space-around;
 }
+
+#nochesCom>p:hover, #numNoches>p:hover
+{
+    background-color: blue;
+    color: white;
+}

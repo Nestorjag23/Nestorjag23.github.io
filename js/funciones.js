@@ -1,5 +1,17 @@
-$(document).ready()
-
+var fecha=new Date();
+var anio=fecha.getFullYear();
+var mes=fecha.getMonth()+1;
+var dia=fecha.getDay()-1;
+if(mes<10)
+{
+    mes="0"+mes;
+}
+if(dia<10)
+{
+    dia="0"+dia;
+}
+var caledario= document.getElementById("calendario");
+calendario.min=anio+"-"+mes+"-"+dia;
 
 
 var divNoches=document.getElementById("noches");
@@ -11,3 +23,6 @@ function mostrarNoches()
     +"<p>5 Noches</p><p>6 Noches</p><p>7 Noches</p><p>8 Noches</p></div></div>");
     divNoches.removeEventListener("click",mostrarNoches,false);
 }
+
+
+
